@@ -1,0 +1,27 @@
+{
+  "name": "age-limit-test",
+  "version": "0.0.5",
+  "description": "Бот для ВК, определяющий возрастной рейтинг материала",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "docs_md": "jsdoc2md *.js > api.md",
+    "docs": "jsdoc -c ./conf.json",
+    "dev": "nodemon index.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "escape-html": "^1.0.3",
+    "express": "^4.16.2",
+    "extend": "^3.0.1",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "ink-docstrap": "^1.3.2",
+    "jsdoc": "^3.5.5",
+    "jsdoc-cdxd": "^0.2.0",
+    "jsdoc-to-markdown": "^3.0.4",
+    "mocha": "^5.0.4",
+    "nodemon": "^1.17.1"
+  }
+}
